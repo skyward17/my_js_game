@@ -1,0 +1,23 @@
+
+<<<Modal>>>
+Layout
+Functionality
+>Select Popup
+X >>>Clean up spacing above img 
+>>>Clean up Click time displayed
+>Character entered into selection variable
+
+
+"Think of the game as a flipbook.  It's the process of drawing images on top
+of each other, over and over and over."
+
+-Look at the HTML5 Canvas Course.
+
+Enemy(Bugs)
+One Bug general structure.  3 different speeds
+*Using the prototype Object Correctly
+
+
+
+
+*Things the graders are looking for.
