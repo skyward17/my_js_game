@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+    <body>
+        <canvas id="myCanvas" width="600" height="600"></canvas>
+
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var ctx = canvas.getContext("2d");
+            var img = 'images/grass-block.png';
+            var pat = ctx.HTMLImageElement(img,"repeat-x"); //.createPattern
+            ctx.rect(0, 0, 150, 100);
+            ctx.fillStyle = pat;
+            ctx.fill();
+
+        </script>
+</body>
+</html>
