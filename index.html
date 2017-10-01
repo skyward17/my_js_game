@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- For Modal -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- Special Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Acme|Fredericka+the+Great" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+    <script src="js/player_select.js"></script>
+    <!-- Player Selection-Page -->
+     <div class="row  text-center">
+      <div class="col-span-12" id="PageCharSelect">
+        <img src="images/char-boy.png" data-toggle="modal" data-target="#player_select">
+        <h1 class="title text-thin">SELECT PLAYER</h1>
+      </div>
+    <!-- Player Selection-Modal -->
+    <div class="modal fade" id="player_select" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="title text-thin" id="myModalLabel">SELECT PLAYER</h4>
+                </div>
+                    <div class="row" id="character container">
+                      <!-- Character Boy -->
+                        <div class="col-md-4" id="boyCharacter">
+                            <div class="popup" onclick="popSelectionBoy()">
+                                <img class="img-responsive" src="images/char-boy.png">
+                                <span class="popuptext" id="popupBoy">You Selected the Boy Character</span>
+                            </div>
+                        </div>
+                        <!-- Character Cat Girl -->
+                        <div class="col-md-4" id="CatGirlCharacter">
+                            <div class="popup" onclick="popSelectionCatGirl()">
+                                <img class="img-responsive" src="images/char-cat-girl.png">
+                                <span class="popuptext" id="popupCatGirl">You Selected the Cat Girl Character</span>
+                            </div>
+                        </div>
+                        <!-- Characeter Horn Girl -->
+                        <div class="col-md-4" id="HornGirlCharacter">
+                            <div class="popup" onclick="popSelectionHornGirl()">
+                                <img class="img-responsive" src="images/char-horn-girl.png">
+                                <span class="popuptext" id="popupHornGirl">You Selected the Horn Girl Character</span>
+                            </div>
+                        </div>
+                        <!-- Character Pink Girl -->
+                        <div class="col-md-4" id="PinkGirlCharacter">
+                            <div class="popup" onclick="popSelectionPinkGirl()">
+                                <img class="img-responsive" src="images/char-pink-girl.png">
+                                <span class="popuptext" id="popupPinkGirl">You Selected the Pink Girl Character</span>
+                            </div>
+                        </div>
+                        <!-- Character Princess Girl -->
+                        <div class="col-md-4" id="PrincessGirlCharacter">
+                            <div class="popup" onclick="popSelectionPrincessGirl()">
+                                <img class="img-responsive" src="images/char-princess-girl.png">
+                                <span class="popuptext" id="popupPrincessGirl">You Selected the Princess Girl Character</span>
+                            </div>
+                        </div>
+                        <!-- Character SEAL Boy -->
+                        <div class="col-md-4" id="SEALBoyCharacter">
+                            <div class="popup" onclick="popSelectionSEALBoy()">
+                                <img class="img-responsive" src="images/char-seal-boy.png">
+                                <span class="popuptext" id="popupSEALBoy">You Selected the SEAL Character</span>
+                            </div>
+                        </div>
+                    </div>
+                <div>
+                    <h1 class="title text-thin">Select a character to play.</h1>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-default btn-lg btn-block" data-dismiss="modal">READY</button> -->
+                   <!--<button type="button" class="btn btn-outline-success" data-dismiss="modal">READY</button> -->
+                   <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal">READY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
